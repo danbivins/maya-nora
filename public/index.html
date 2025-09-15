@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/tailwind.output.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <title>Maya and Nora Design</title>
   </head>
   <body>
@@ -41,7 +39,7 @@
             <div class="flex items-center gap-4">
               <div class="sm:flex sm:gap-4">
                 <a class="rounded-md bg-teal-600 px-8 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-900"
-                  href="https://www.etsy.com/shop/MayaAndNora">Shop</a>
+                  href="https://www.etsy.com/shop/MayaAndNora">Shop our Etsy store</a>
 
                 <!-- <div class="hidden sm:flex">
                   <a
@@ -53,7 +51,7 @@
                 </div> -->
               </div>
 
-              <div class="block md:hidden">
+              <!-- <div class="block md:hidden">
                 <button
                   class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                 >
@@ -68,7 +66,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -77,10 +75,10 @@
 
     <div class="container mx-auto">
       <section class="lg:grid lg:place-content-center my-16">
-        <div class="mx-auto w-screen max-w-screen-xl px-4 py-8 sm:px-12 sm:py-12 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-4" >
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-12 sm:py-12 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-4 border border-teal-800 " >
           <div class="max-w-prose text-left">
             <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
-              <strong class=""> Maya and Nora </strong>
+              <strong class="">Maya and Nora</strong>
             </h1>
 
             <p class="mt-4 text-base text-pretty text-gray-900 sm:text-lg/relaxed">
@@ -109,20 +107,21 @@
             </div> -->
           </div>
 
-          <img src="img/hero.png" alt="">
+          <img src="img/hero.png" alt="" fetchpriority="high">
         </div>
       </section>
 
       <!-- ✅ Grid Section - Starts Here 👇 -->
-      <section id="listings" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-
+      <ol role="list" id="listings" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
           <!--   ✅ Product card 1 - Starts Here 👇 -->
-          <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4">
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
               <a href="https://www.etsy.com/listing/4365733624/95-sports-social-media-football-editable">
-                  <img src="img/list1.jpg" alt="95 Sports Social Media Football Editable Post Templates" class="h-80 w-72 object-cover rounded-t-xl" />
+
+                  <img src="img/list1.jpg" alt="95 Sports Social Media Football Editable Post Templates" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="high" />
+                  
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-500 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
-                      <p class="text-lg text-black block capitalize">95 Sports Social Media Football Editable Posts Template Bundle Teams GameDay Graphics Canva Instagram</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
+                      <p class="text-lg text-black block capitalize"><strong>95 Editable Football Social Media Posts</strong> Template Bundle Teams GameDay Graphics Canva Instagram</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$13.60</p>
                           <del>
@@ -130,20 +129,21 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/4316629195/65-sports-social-media-editable-template" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                    
+                        <span class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                    
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 1 - Ends Here  -->
 
           <!--   ✅ Product card 2 - Starts Here 👇 -->
-          <div class="w-72 bg-white outline shadow-lg rounded-xl duration-200 hover:scale-105 hover:shadow-xl m-4">
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
               <a href="https://www.etsy.com/listing/4316629195/65-sports-social-media-editable-template">
-                  <img src="img/list2.jpg" alt="65 Sports Social Media Editable Template graphics" class="h-80 w-72 object-cover rounded-t-xl" />
+                  <img src="img/list2.jpg" alt="65 Sports Social Media Editable Template graphics" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="high" />
+
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-700 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
-                      <p class="text-lg text-black block capitalize">65 Sports Social Media Editable Template Bundle Teams Graphics Canva Instagram</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
+                      <p class="text-lg text-black block capitalize"><strong>65 Editable Sports Social Media Templates</strong> Team Graphics Canva Instagram</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$10.48</p>
                           <del>
@@ -151,20 +151,20 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/4316629195/65-sports-social-media-editable-template" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                 
+                        <span class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                 
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 2- Ends Here  -->
 
           <!--   ✅ Product card 3 - Starts Here 👇 -->
-          <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4">
-              <a href="https://www.etsy.com/listing/4367013072/100-basketball-social-media-editable">
-                  <img src="img/list3.jpg" alt="100 Sports Social Media Football Editable Post Templates" class="h-80 w-72 object-cover rounded-t-xl" />
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
+              <a href="https://www.etsy.com/listing/4325136254/travel-team-recruiting-roster-college">
+                  <img src="img/list3.jpg" alt="100 Sports Social Media Football Editable Post Templates" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="high" />
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-700 mr-3 uppercase text-xs mb-4 block">Recruiting</span>
-                      <p class="text-lg text-black block capitalize">100 Basketball Social Media Editable Template Bundle Team Graphics</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Recruiting</span>
+                      <p class="text-lg text-black block capitalize"><strong>Editable Recruiting Travel Team Roster Resume Template</strong> for Showcases and Tournaments</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$13.60</p>
                           <del>
@@ -172,20 +172,20 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/4367013072/100-basketball-social-media-editable" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                    
+                        <span class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                    
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 3 - Ends Here  -->
 
           <!--   ✅ Product card 4 - Starts Here 👇 -->
-          <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4">
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
               <a href="https://www.etsy.com/listing/4367013072/100-basketball-social-media-editable">
-                  <img src="img/list4.jpg" alt="Baseball Lineup Card Template, Editable Batting Order Sheet" class="h-80 w-72 object-cover rounded-t-xl" />
+                  <img src="img/list4.jpg" alt="Baseball Lineup Card Template, Editable Batting Order Sheet" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="low" />
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-700 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
-                      <p class="text-lg text-black block capitalize">100 Basketball Social Media Editable Template Bundle Teams Graphics</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Social Media Graphics</span>
+                      <p class="text-lg text-black block capitalize"><strong>100 Basketball Social Media Editable Templates</strong> Team Graphics for Instagram</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$3.15</p>
                           <del>
@@ -193,20 +193,20 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/4367013072/100-basketball-social-media-editable" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                    
+                        <span href="https://www.etsy.com/listing/4367013072/100-basketball-social-media-editable" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                    
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 4 - Ends Here  -->
 
           <!--   ✅ Product card 5 - Starts Here 👇 -->
-          <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4">
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
               <a href="https://www.etsy.com/listing/1695691687/editable-baseball-lineup-card-template">
-                  <img src="img/list5.jpg" alt="Editable Soccer Locker and Hotel Door Sign" class="h-80 w-72 object-cover rounded-t-xl" />
+                  <img src="img/list5.jpg" alt="Editable Soccer Locker and Hotel Door Sign" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="low" />
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-700 mr-3 uppercase text-xs mb-4 block">Roster lineup</span>
-                      <p class="text-lg text-black block capitalize">Baseball Lineup Card Template, Editable Batting Order Sheet</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Roster lineup</span>
+                      <p class="text-lg text-black block capitalize"><strong> Roster Lineup Card Template</strong>, Editable Batting Order Sheet</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$5.32</p>
                           <del>
@@ -214,20 +214,20 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/1695691687/editable-baseball-lineup-card-template" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                    
+                        <span href="https://www.etsy.com/listing/1695691687/editable-baseball-lineup-card-template" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                    
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 5 - Ends Here  -->
 
           <!--   ✅ Product card 6 - Starts Here 👇 -->
-          <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4">
+          <li role="listitem" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl m-4 card">
               <a href="https://www.etsy.com/listing/4321014163/editable-athlete-recruiting-resume">
-                  <img src="img/list6.jpg" alt="Editable Athlete Recruiting Resume Profile Sheet College Canva Template" class="h-80 w-72 object-cover rounded-t-xl" />
+                  <img src="img/list6.jpg" alt="Editable Athlete Recruiting Resume Profile Sheet College Canva Template" class="h-80 w-72 object-cover rounded-t-xl" fetchpriority="low" />
                   <div class="px-8 py-12 w-72">
-                      <span class="text-gray-700 mr-3 uppercase text-xs mb-4 block">Recruiting</span>
-                      <p class="text-lg text-black block capitalize">Editable Athlete Recruiting Resume Profile Sheet College Canva Template</p>
+                      <span class="text-teal-700 mr-3 uppercase text-xs mb-4 block">Recruiting</span>
+                      <p class="text-lg text-black block capitalize"><strong>Athlete Recruiting Resume Profile</strong> Sheet for College Recruits, Canva Template</p>
                       <div class="flex items-center">
                           <p class="text-lg font-semibold text-black cursor-auto my-3">$4.00</p>
                           <del>
@@ -235,14 +235,14 @@
                           </del>
                       </div>
                       <div class="m-auto">
-                        <a href="https://www.etsy.com/listing/4321014163/editable-athlete-recruiting-resume" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</a>                    
+                        <span href="https://www.etsy.com/listing/4321014163/editable-athlete-recruiting-resume" class="inline-block rounded-md border border-teal-600 px-12 py-3 text-sm font-medium text-teal-700 hover:bg-teal-600 hover:text-white cursor-pointer">Buy now</span>                    
                       </div> 
                   </div>
               </a>
-          </div>
+          </li> 
           <!--   🛑 Product card 6 - Ends Here  -->
 
-      </section>
+        </ol>
       <!-- 🛑 Grid Section - Ends Here -->
 
       <!-- Reviews -->
@@ -289,43 +289,4 @@
 
     </div>
   </body>
-<style>
-/* Default: show desktop version */
-.etsy-widget-desktop {
-    display: block;
-
-}
-
-.etsy-widget-desktop iframe {
-    margin: 1rem auto;
-}
-
-.etsy-widget-tablet,
-.etsy-widget-mobile {
-    display: none;
-}
-
-/* Tablet (between 768px and 1024px) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .etsy-widget-desktop {
-        display: none;
-    }
-
-    .etsy-widget-tablet {
-        display: block;
-    }
-}
-
-/* Mobile (up to 767px) */
-@media screen and (max-width: 767px) {
-    .etsy-widget-desktop,
-    .etsy-widget-tablet {
-        display: none;
-    }
-
-    .etsy-widget-mobile {
-        display: block;
-    }
-}
-</style>
 </html>
