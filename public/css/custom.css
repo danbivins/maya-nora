@@ -1,3 +1,12 @@
+body {
+    background-color: #fffef9;
+    font-size: 1.25rem;
+}
+
+.blog main {
+    max-width: 960px;
+}
+
 .card {
     position: relative
 }
@@ -10,3 +19,48 @@
     right: 0;
     bottom: 0;
 }
+
+header {
+    margin-top: 3rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    margin: 1.5rem 0 .75rem 0;
+}
+
+p{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* li {
+    font-size: 1.25rem;
+} */
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
